@@ -239,18 +239,18 @@ const EditableTable = () => {
   };
 
     return (
-        <div>
-          <Alert message='Dica -> clique em cima das linhas para editar' type='success' style={{
+        <div style={{padding: 35}}>
+          <Alert message='Dica: para editar clica em cima dos textos das colunas' type='success' style={{
               marginBottom: 16, marginTop: 16
             }} />
           <Button
             onClick={handleAdd}
             type="primary"
             style={{
-              marginBottom: 2,
+              marginBottom: 16,
             }}
           >
-            Adicionar contato
+            Adicionar +
           </Button>
           <Table
             loading={loading}
